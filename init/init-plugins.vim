@@ -538,6 +538,9 @@ if index(g:bundle_group , 'YCM') >= 0
 	let g:ycm_key_invoke_completion = '<c-z>'
 	set completeopt=menu,menuone,noselect
 
+	" 设置Python为当前环境中的Python以适应虚拟环境
+	let g:ycm_python_binary_path = 'python'
+
 	" noremap <c-z> <NOP>
 
 	" 两个字符自动触发语义补全
